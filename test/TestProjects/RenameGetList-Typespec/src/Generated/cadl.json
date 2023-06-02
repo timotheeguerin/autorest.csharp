@@ -252,7 +252,7 @@
      "Type": {
       "$id": "34",
       "Name": "ResourceLocation",
-      "Kind": "Uri",
+      "Kind": "String",
       "IsNullable": false
      },
      "IsRequired": false,
@@ -318,7 +318,7 @@
      "Type": {
       "$id": "42",
       "Name": "ResourceLocation",
-      "Kind": "Uri",
+      "Kind": "String",
       "IsNullable": false
      },
      "IsRequired": false,
@@ -338,6 +338,7 @@
      "$id": "44",
      "Name": "get",
      "ResourceName": "Project",
+     "Deprecated": "Use the equivalent operation from the ResourceOperations interface.",
      "Description": "Gets the details of a project.",
      "Parameters": [
       {
@@ -465,6 +466,7 @@
      "$id": "57",
      "Name": "list",
      "ResourceName": "Project",
+     "Deprecated": "Use the equivalent operation from the ResourceOperations interface.",
      "Description": "Lists the existing projects.",
      "Parameters": [
       {
@@ -532,6 +534,7 @@
      "$id": "63",
      "Name": "get",
      "ResourceName": "Deployment",
+     "Deprecated": "Use the equivalent operation from the ResourceOperations interface.",
      "Description": "Gets the details of a deployment.",
      "Parameters": [
       {
@@ -634,6 +637,7 @@
      "$id": "72",
      "Name": "list",
      "ResourceName": "Deployment",
+     "Deprecated": "Use the equivalent operation from the ResourceOperations interface.",
      "Description": "Lists the existing deployments.",
      "Parameters": [
       {

@@ -1,11 +1,27 @@
 {
-  "name": "@autorest/csharp",
-  "private": true,
-  "description": "package.json intended for in-repo use only, package.json used for publishing is located in src/AutoRest.CSharp/package.json",
-  "devDependencies": {
-    "@azure-tools/typespec-csharp": "src/CADL.Extension/Emitter.Csharp",
-    "@azure-tools/cadl-ranch-mockapis": "file:test/CadlRanchMockApis",
-    "@microsoft.azure/autorest.testserver": "3.3.24",
-    "autorest": "3.6.1"
-  }
+    "name": "@autorest/csharp",
+    "private": true,
+    "description": "package.json intended for in-repo use only, package.json used for publishing is located in src/AutoRest.CSharp/package.json",
+    "devDependencies": {
+        "@azure-tools/typespec-csharp": "src/CADL.Extension/Emitter.Csharp",
+        "@azure-tools/cadl-ranch-mockapis": "file:test/CadlRanchMockApis",
+        "@microsoft.azure/autorest.testserver": "3.3.24",
+        "autorest": "3.6.1",
+        "@typespec/compiler": "0.45.0-dev.20",
+        "@typespec/rest": "0.45.0-dev.2",
+        "@typespec/http": "0.45.0-dev.3",
+        "@typespec/versioning": "0.45.0-dev.2",
+        "@azure-tools/typespec-client-generator-core": "https://artprodcus3.artifacts.visualstudio.com/A0fb41ef4-5012-48a9-bf39-4ee3de03ee35/29ec6040-b234-4e31-b139-33dc4287b756/_apis/artifact/cGlwZWxpbmVhcnRpZmFjdDovL2F6dXJlLXNkay9wcm9qZWN0SWQvMjllYzYwNDAtYjIzNC00ZTMxLWIxMzktMzNkYzQyODdiNzU2L2J1aWxkSWQvMjgxNjg2MC9hcnRpZmFjdE5hbWUvcGFja2FnZXM1/content?format=file&subPath=%2Fazure-tools-typespec-client-generator-core-0.30.0.tgz",
+        "@azure-tools/typespec-azure-core": "0.31.0-dev.15",
+        "@typespec/eslint-config-typespec": "0.8.0-dev.0"
+    },
+    "overrides": {
+        "@typespec/compiler": "0.45.0-dev.20",
+        "@typespec/rest": "0.45.0-dev.2",
+        "@typespec/http": "0.45.0-dev.3",
+        "@typespec/versioning": "0.45.0-dev.2",
+        "@azure-tools/typespec-client-generator-core": "https://artprodcus3.artifacts.visualstudio.com/A0fb41ef4-5012-48a9-bf39-4ee3de03ee35/29ec6040-b234-4e31-b139-33dc4287b756/_apis/artifact/cGlwZWxpbmVhcnRpZmFjdDovL2F6dXJlLXNkay9wcm9qZWN0SWQvMjllYzYwNDAtYjIzNC00ZTMxLWIxMzktMzNkYzQyODdiNzU2L2J1aWxkSWQvMjgxNjg2MC9hcnRpZmFjdE5hbWUvcGFja2FnZXM1/content?format=file&subPath=%2Fazure-tools-typespec-client-generator-core-0.30.0.tgz",
+        "@azure-tools/typespec-azure-core": "0.31.0-dev.15",
+        "@typespec/eslint-config-typespec": "0.8.0-dev.0"
+    }
 }

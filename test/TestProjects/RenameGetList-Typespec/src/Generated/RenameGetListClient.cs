@@ -71,6 +71,7 @@ namespace Azure.RenameGetList
         /// <exception cref="RequestFailedException"> Service returned a non-success status code. </exception>
         /// <returns> The response returned from the service. </returns>
         /// <include file="Docs/RenameGetListClient.xml" path="doc/members/member[@name='GetProjectAsync(string,RequestContext)']/*" />
+        [Obsolete("Use the equivalent operation from the ResourceOperations interface.")]
         public virtual async Task<Response> GetProjectAsync(string projectName, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
@@ -106,6 +107,7 @@ namespace Azure.RenameGetList
         /// <exception cref="RequestFailedException"> Service returned a non-success status code. </exception>
         /// <returns> The response returned from the service. </returns>
         /// <include file="Docs/RenameGetListClient.xml" path="doc/members/member[@name='GetProject(string,RequestContext)']/*" />
+        [Obsolete("Use the equivalent operation from the ResourceOperations interface.")]
         public virtual Response GetProject(string projectName, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
@@ -142,6 +144,7 @@ namespace Azure.RenameGetList
         /// <exception cref="RequestFailedException"> Service returned a non-success status code. </exception>
         /// <returns> The response returned from the service. </returns>
         /// <include file="Docs/RenameGetListClient.xml" path="doc/members/member[@name='GetDeploymentAsync(string,string,RequestContext)']/*" />
+        [Obsolete("Use the equivalent operation from the ResourceOperations interface.")]
         public virtual async Task<Response> GetDeploymentAsync(string projectName, string deploymentName, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
@@ -179,6 +182,7 @@ namespace Azure.RenameGetList
         /// <exception cref="RequestFailedException"> Service returned a non-success status code. </exception>
         /// <returns> The response returned from the service. </returns>
         /// <include file="Docs/RenameGetListClient.xml" path="doc/members/member[@name='GetDeployment(string,string,RequestContext)']/*" />
+        [Obsolete("Use the equivalent operation from the ResourceOperations interface.")]
         public virtual Response GetDeployment(string projectName, string deploymentName, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
@@ -212,6 +216,7 @@ namespace Azure.RenameGetList
         /// <exception cref="RequestFailedException"> Service returned a non-success status code. </exception>
         /// <returns> The <see cref="AsyncPageable{T}"/> from the service containing a list of <see cref="BinaryData"/> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         /// <include file="Docs/RenameGetListClient.xml" path="doc/members/member[@name='GetProjectsAsync(RequestContext)']/*" />
+        [Obsolete("Use the equivalent operation from the ResourceOperations interface.")]
         public virtual AsyncPageable<BinaryData> GetProjectsAsync(RequestContext context = null)
         {
             HttpMessage FirstPageRequest(int? pageSizeHint) => CreateGetProjectsRequest(context);
@@ -233,6 +238,7 @@ namespace Azure.RenameGetList
         /// <exception cref="RequestFailedException"> Service returned a non-success status code. </exception>
         /// <returns> The <see cref="Pageable{T}"/> from the service containing a list of <see cref="BinaryData"/> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         /// <include file="Docs/RenameGetListClient.xml" path="doc/members/member[@name='GetProjects(RequestContext)']/*" />
+        [Obsolete("Use the equivalent operation from the ResourceOperations interface.")]
         public virtual Pageable<BinaryData> GetProjects(RequestContext context = null)
         {
             HttpMessage FirstPageRequest(int? pageSizeHint) => CreateGetProjectsRequest(context);
@@ -257,6 +263,7 @@ namespace Azure.RenameGetList
         /// <exception cref="RequestFailedException"> Service returned a non-success status code. </exception>
         /// <returns> The <see cref="AsyncPageable{T}"/> from the service containing a list of <see cref="BinaryData"/> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         /// <include file="Docs/RenameGetListClient.xml" path="doc/members/member[@name='GetDeploymentsAsync(string,RequestContext)']/*" />
+        [Obsolete("Use the equivalent operation from the ResourceOperations interface.")]
         public virtual AsyncPageable<BinaryData> GetDeploymentsAsync(string projectName, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
@@ -283,6 +290,7 @@ namespace Azure.RenameGetList
         /// <exception cref="RequestFailedException"> Service returned a non-success status code. </exception>
         /// <returns> The <see cref="Pageable{T}"/> from the service containing a list of <see cref="BinaryData"/> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         /// <include file="Docs/RenameGetListClient.xml" path="doc/members/member[@name='GetDeployments(string,RequestContext)']/*" />
+        [Obsolete("Use the equivalent operation from the ResourceOperations interface.")]
         public virtual Pageable<BinaryData> GetDeployments(string projectName, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
